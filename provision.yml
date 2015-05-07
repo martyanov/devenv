@@ -10,3 +10,6 @@
     - include: tasks/install_postgresql.yml pg_version=9.4
     - include: tasks/install_nginx.yml
     - include: tasks/install_python.yml
+
+  handlers:
+    - include: handlers/postgresql.yml

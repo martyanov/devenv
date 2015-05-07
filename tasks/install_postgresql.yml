@@ -15,3 +15,12 @@
     - postgresql-client-{{ pg_version }}
     - libpq-dev
   sudo: true
+
+- name: Configure PostgreSQL to listen all networks
+  replace:
+    dest: /etc/postgresql/{{ pg_version }}/main/postgresql.conf
+    regexp: "^#listen_addresses = 'localhost'"
+    replace: "listen_addresses = '*'"
+  notify:
+    - restart postgresql
+  sudo: true

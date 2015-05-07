@@ -1,0 +1,17 @@
+---
+
+- name: Import PostgreSQL repository key
+  apt_key: url=http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc
+  sudo: true
+
+- name: Add PostgreSQL repository
+  apt_repository: repo='deb http://apt.postgresql.org/pub/repos/apt/ {{ ansible_lsb.codename }}-pgdg main' state=present
+  sudo: true
+
+- name: Install PostgreSQL
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - postgresql-{{ pg_version }}
+    - postgresql-client-{{ pg_version }}
+    - libpq-dev
+  sudo: true

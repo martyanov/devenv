@@ -7,7 +7,7 @@ As it's always cumbersome to manually setup development environment I've created
 
 ## How to use
 
-Assuming Vagrant and Ansible are already installed it is as easy as executing the following command:
+Assuming [Vagrant](http://docs.vagrantup.com/v2/installation/) and [Ansible](http://docs.ansible.com/intro_installation.html) are already installed it is as easy as cloning the repository and executing the following command:
 
 ```bash
 vagrant up

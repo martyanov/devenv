@@ -2,8 +2,8 @@
 
 - name: Update repository cache
   action: apt update_cache=yes
-  sudo: yes
+  become: yes
 
 - name: Update packages
   action: apt upgrade=safe
-  sudo: yes
+  become: yes

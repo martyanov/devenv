@@ -8,4 +8,4 @@
     - libfreetype6-dev
     - libjpeg8-dev
     - libpng12-dev
-  sudo: true
+  become: yes

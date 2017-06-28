@@ -4,10 +4,11 @@
   apt: pkg={{ item }} state=latest
   with_items:
     - python2.7-dev
-    - python3.4-dev
+    - python3.5-dev
     - python-setuptools
     - python3-setuptools
     - python-pip
     - python3-pip
+    - python-fabric
     - python-virtualenv
-  sudo: true
+  become: yes

@@ -6,4 +6,4 @@
     - htop
     - iotop
     - tree
-  sudo: true
+  become: yes

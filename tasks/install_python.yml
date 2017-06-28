@@ -9,6 +9,6 @@
     - python3-setuptools
     - python-pip
     - python3-pip
-    - python-fabric
     - python-virtualenv
+    - fabric
   become: yes

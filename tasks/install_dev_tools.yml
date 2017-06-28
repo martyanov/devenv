@@ -8,4 +8,6 @@
     - libfreetype6-dev
     - libjpeg8-dev
     - libpng12-dev
+    - libyaml-dev
+    - libxml2-dev
   become: yes

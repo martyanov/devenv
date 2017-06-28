@@ -8,6 +8,7 @@
     - include: tasks/install_system_tools.yml
     - include: tasks/install_dev_tools.yml
     - include: tasks/install_postgresql.yml pg_version=9.6
+    - include: tasks/install_docker.yml
     - include: tasks/install_nginx.yml
     - include: tasks/install_python.yml
 
